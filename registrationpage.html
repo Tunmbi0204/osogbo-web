@@ -7,32 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registration page</title>
     <style>
-        .content{
+        /* .content{
      color:lightcoral ;
      font-size:20px;
      background-color:lightblue;
      margin-top:3px;
      text-align: center;
-        }
+        } */
        .nav{
            background-color:brown;
-           margin-left:30%;
-           margin-right:30%;
+           /* margin-left:30%; */
+           /* margin-right:30%; */
+           text-align: center;
+           padding-top: 1%;
            }
-           body {background-color: powderblue;
+           body {
+            background-color: powderblue;
+            padding: 0%;
+            margin: 0%;
         }
     
      .form{
     background-color:powderblue;
-    margin-left:40%;
-    margin-right:50%;
+    height: auto;
+    margin-left: 5%;
+   
     }
     h1{
         color:brown
     }
+    .footer{
+width:100%;
+text-align:center;
+margin-top:20px;
+padding-top:10px;
+padding-bottom:10px;
+background-color: brown;
+}
+
+.footer .paragraph{
+ text-transform: uppercase;
+ font-family: Helvetica;
+ color: white;
+ font-size: large;
+     }
+
+.footer .contact{
+    font-family:helvetica;
+    color: white;
+    text-decoration: solid;
+    /* font-weight:bold; */
+    font-size: medium;
+}
+
        </style>
        </head>
-       <p></p>
         <body>
            <div class="nav">
                <a href="index.html" title="Introduction">Home-Page</a>
@@ -59,7 +88,7 @@
     </p>
     <p>
         Phone Number:<br>
-         <input type="mobile">
+         <input type="mobile" placeholder="Phone Number">
      </p>
 <p>
    password:<br>
@@ -67,7 +96,8 @@
 </p>
 <p>
 Date of Birth:<br>
- <input type="date">
+ <input type="date" placeholder="Date Of Birth">
+ 
  </p>
     <p>
     Gender:<br>
@@ -87,11 +117,17 @@ Date of Birth:<br>
         </p>
     </select>
     <p>
-<input type="checkbox" class="check-box"><span>I Agree to The Term & Condition</span>
+<input type="checkbox" class="check-box"><span>I Agree to The Terms & Condition</span>
 </p>
 <p>
     <input type="submit" value="Sign Up">
     </p>
 </form>
+</div>
+<div class="footer">
+ <p class="paragraph">Osogbo Full Webpage</p>
+ <p class="contact">Contact Us On Osogboweb.com.ng</p>
+ </div>
+ </body>
 </body>
 </html>

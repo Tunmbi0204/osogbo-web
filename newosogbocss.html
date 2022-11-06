@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my osogbo design webpage</title>
 <style>
- .content{
+ .content {
      color:(255, 208, 0) ;
      font-size:20px;
      background-color:brown;
@@ -23,14 +23,23 @@ h1{
 }
 #lorem{
      color:black;
+     text-transform: uppercase;
+
 }
 .nav{
     background-color:brown;
-    margin-left: 30%;
-    margin-right:30%;
+    /* margin-left: 30%;
+    margin-right:30%; */
+    /* background-color: brown; */
+    text-align: center;
+    padding-top: 1%;
 }
-body {background-color: powderblue;
+body {
+background-color: powderblue;
+padding: 0;
+margin: 0;
 }
+
 h2{
 color:brown;
 margin-left: 40%;
@@ -39,14 +48,65 @@ p {
  color: brown;
 
 }
+.images{
+display:grid;
+padding-right:20px;
+padding-left:20px;
+width:100%;
+grid-template-columns:repeat(auto-fit, minmax(160px, 2fr));
+grid-row-gap:10px;
+grid-column-gap:10px;
+margin-top:70px;
+}
+.images img{
+width:100%;
+height:auto;
+border-radius:15px;
+box-shadow:0px 2px 4px 0px rgba(0,0,0,0.2);
+}
+.footer{
+width:100%;
+text-align:center;
+margin-top:20px;
+padding-top:10px;
+padding-bottom:10px;
+background-color: brown;
+}
+
+.footer .paragraph{
+ text-transform: uppercase;
+ font-family: Helvetica;
+ color: white;
+ font-size: large;
+     }
+
+.footer .contact{
+    font-family:helvetica;
+    color: white;
+    text-decoration: solid;
+    font-weight:bold;
+    font-size: medium;
+}
+@media (max-width:400px){
+      .images .img{
+        width: 100%;
+    }
+
+    .main-content{
+        padding: 0 5px;
+        width: 100%;
+    }
+      .nav .a{
+        /* display: none; */
+        width: 20%;
+    }
+
+}
 
 </style>
-<p>
- </head>
+</head>
 <body>
-    <head>
-
-    <div class="nav">
+<div class="nav">
         <a href="index.html" title="Introduction">Home-Page</a>
         <a href="osogbo3rdpagecss.html" title="About">History</a>
         <a href="registrationpage.html" title="Register">Registration</a>
@@ -55,14 +115,15 @@ p {
         </div>
        </head> 
  <h2>OSOGBO GROOVE</h2>
- <p id="lorem">The Myth and the History.</p>   
-  <p class="content"></p>
+ <p id="lorem">The Myth and the History Images..</p><div>
+  <!-- <p class="content"> -->
   <hr>
+  <div class="images">
   <img src="images/osun 001.jpg" width="200px" height="200px">
   <img src="images/osun 002.jpg" width="200px" height="200px">
   <img src="images/osun 003.jpg" width="200px" height="200px">
   <img src="images/osun 004.jpg" width="200px" height="200px">
-  <img src="images/osun 005.jpg" width="200px" height="200px">
+  <!-- <img src="images/osun 005.jpg" width="200px" height="200px"> -->
   <img src="images/osun 006.jpg" width="200px" height="200px">
   <img src="images/osun 007.jpg" width="200px" height="200px">
   <img src="images/osun 008.jpg" width="200px" height="200px">
@@ -73,9 +134,9 @@ p {
   <img src="images/osun 1.jpg" width="200px" height="200px">
   <img src="images/osun 2.jpg" width="200px" height="200px">
   <img src="images/osun 3.jpg" width="200px" height="200px">
-  <img src="images/osun 4.jpg" width="200px" height="200px">
+  <!-- <img src="images/osun 4.jpg" width="200px" height="200px"> -->
   <img src="images/osun 5.jpg" width="200px" height="200px">
-  <img src="images/osun 6.jpg" width="200px" height="200px">
+  <!-- <img src="images/osun 6.jpg" width="200px" height="200px"> -->
   <img src="images/osun 7.jpg" width="200px" height="200px">
   <img src="images/osun 8.jpg" width="200px" height="200px">
   <img src="images/osun 9.jpg" width="200px" height="200px">
@@ -87,6 +148,13 @@ p {
   <img src="images/groove 16.jpg" width="200px" height="200px">
   <img src="images/groove 17.jpg" width="200px" height="200px">
   <img src="images/groove 18.jpg" width="200px" height="200px">
-  <img src="images/groove 19.jpg" width="200px" height="200px">
-  </body>
+  <!-- <img src="images/groove 19.jpg" width="200px" height="200px"> -->
+  
+</div>
+<div class="footer">
+ <p class="paragraph">Osogbo Full Webpage</p>
+ <p class="contact">Contact Us On Osogboweb.com.ng</p>
+ </div>
+
+</body>
 </html>
