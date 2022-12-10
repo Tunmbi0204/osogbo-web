@@ -1,17 +1,32 @@
-.nav{
-    background-color:brown;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: brown;
 }
-.nav a{
-    text-decoration: none;
-    padding: 10px 35px;
-    display: inline-block;
+li {
+    float: left;
+    margin-left: 10%;
+}
+
+li a {
+    display: block;
     color: white;
-    background: rgba(0, 0, 0, 0.116);
-   
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-.nav a:hover{
-    background-color: black;
-} 
+
+li a:hover:not(.active) {
+    background-color: #111;
+    color: white;
+}
+
+.active {
+    background-color: #4CAF50;
+ 
+}
 
 
 
@@ -24,9 +39,6 @@
         padding: 0 5px;
         width: 100%;
     }
-      .nav a{
-        display: block;
-        flex-wrap: wrap;
-        display: flex;
+      
     }
-}
+
